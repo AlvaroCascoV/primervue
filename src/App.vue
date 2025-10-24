@@ -1,17 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/images/logo.png" /> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+  <!-- <HolaMundo /> -->
+  <!-- <HomeComponent />
+  <CineComponent />
+  <MusicaComponent /> -->
+  <div>
+    <h1 style="color: red">Elemento estatico</h1>
+    <MenuComponent />
+    <hr />
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from "./components/HelloWorld.vue";
+// import HolaMundo from "./components/HolaMundo.vue";
+// import HomeComponent from "./components/HomeComponent.vue";
+// import CineComponent from "./components/CineComponent.vue";
+// import MusicaComponent from "./components/MusicaComponent.vue";
+import MenuComponent from "./components/MenuComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    // HelloWorld,
+    // HolaMundo,
+    // CineComponent,
+    // HomeComponent,
+    // MusicaComponent,
+    MenuComponent,
+  },
+};
 </script>
 
 <style>
