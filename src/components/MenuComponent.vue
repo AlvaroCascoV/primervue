@@ -3,12 +3,18 @@
 		<ul id="menu">
 			<li>
 				<router-link to="/">Home</router-link>
+				|
 			</li>
 			<li>
 				<router-link to="/cine">Cine</router-link>
+				|
 			</li>
 			<li>
 				<router-link to="/musica">Musica</router-link>
+				|
+			</li>
+			<li>
+				<router-link to="/ciclovida">Ciclo Vida</router-link>
 			</li>
 		</ul>
 	</div>
@@ -20,6 +26,6 @@
 </script>
 <style>
 	ul#menu li {
-		display: block;
+		display: inline;
 	}
 </style>
