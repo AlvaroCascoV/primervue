@@ -5,13 +5,15 @@ import HomeComponent from './components/HomeComponent.vue'
 import CineComponent from './components/CineComponent.vue'
 import MusicaComponent from './components/MusicaComponent.vue'
 import CicloVida from './components/CicloVida.vue'
+import DirectivasComponent from './components/DirectivasComponent.vue'
 
 //UN ARRAY CON LAS RUTAS DE NAVEGACION
 const myRoutes = [
     { path: "/", component: HomeComponent },
     { path: "/musica", component: MusicaComponent },
     { path: "/cine", component: CineComponent },
-    { path: "/ciclovida", component: CicloVida }
+    { path: "/ciclovida", component: CicloVida },
+    { path: "/directivas", component: DirectivasComponent }
 ]
 
 //CREAMOS UNA VARIBALE PARA EL router INDICANDO EL TIPO DE NAVEGACION Y
