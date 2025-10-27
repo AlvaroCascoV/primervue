@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<h1>Par Impar</h1>
-		<h2 v-if="numero % 2 == 0">Par</h2>
-		<h2 v-else>Impar</h2>
+		<h2 v-if="numero % 2 == 0" style="color: green">Par</h2>
+		<h2 v-else style="color: red">Impar</h2>
 		<label>Introduce Numero:</label>
 		<input type="number" v-model="numero" />
 		<button v-on:click="numeroAleatorio()">Random</button>
