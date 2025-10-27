@@ -8,6 +8,7 @@ import CicloVida from './components/CicloVida.vue'
 import DirectivasComponent from './components/DirectivasComponent.vue'
 import ParImpar from './components/ParImpar.vue'
 import PropiedadConmutada from './components/PropiedadConmutada.vue'
+import MetodosFilters from './components/MetodosFilters.vue'
 
 //UN ARRAY CON LAS RUTAS DE NAVEGACION
 const myRoutes = [
@@ -17,7 +18,8 @@ const myRoutes = [
     { path: "/ciclovida", component: CicloVida },
     { path: "/directivas", component: DirectivasComponent },
     { path: "/parimpar", component: ParImpar },
-    { path: "/propiedadconmutada", component: PropiedadConmutada }
+    { path: "/propiedadconmutada", component: PropiedadConmutada },
+    { path: "/metodosfilters", component: MetodosFilters }
 ]
 
 //CREAMOS UNA VARIBALE PARA EL router INDICANDO EL TIPO DE NAVEGACION Y

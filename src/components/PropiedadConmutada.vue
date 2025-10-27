@@ -1,5 +1,8 @@
 <template>
 	<h1>Propiedades Conmutadas</h1>
+	<label>Introduzca un numero:</label>
+	<input type="number" v-model="numero" />
+	<div v-html="evaluarNumero"></div>
 	<ul>
 		<li v-for="game in juegosRojos" :key="game" v-html="game"></li>
 	</ul>
@@ -11,9 +14,18 @@
 	export default {
 		name: "PropiedadConmutada",
 		computed: {
+			evaluarNumero() {
+				let data = "";
+				if (this.numero % 2 == 0) {
+					data = "<h4 style='color:green'>Par: " + this.numero + "</h4>";
+				} else {
+					data = "<h4 style='color:red'>Impar: " + this.numero + "</h4>";
+				}
+				return data;
+			},
 			//SE ESCRIBEN COMO UN METODO PERO SE UTILIZA COMO UNA PROPIEDAD
 			juegosRojos() {
-				var datos = this.juegos;
+				var datos = [];
 				var i = 0;
 				for (var game of this.juegos) {
 					var juegoRojo = "<span style='color:red'>" + game + "</span>";
@@ -25,6 +37,7 @@
 		},
 		data() {
 			return {
+				numero: 0,
 				juegos: ["Parchis", "Canicas", "Luzverde, luz roja", "La galleta"],
 			};
 		},

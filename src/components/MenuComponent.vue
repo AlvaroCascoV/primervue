@@ -27,6 +27,10 @@
 			</li>
 			<li>
 				<router-link to="/propiedadconmutada">Conmutadas</router-link>
+				|
+			</li>
+			<li>
+				<router-link to="/metodosfilters">Filters</router-link>
 			</li>
 		</ul>
 	</div>
