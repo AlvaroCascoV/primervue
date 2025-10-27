@@ -7,6 +7,7 @@ import MusicaComponent from './components/MusicaComponent.vue'
 import CicloVida from './components/CicloVida.vue'
 import DirectivasComponent from './components/DirectivasComponent.vue'
 import ParImpar from './components/ParImpar.vue'
+import PropiedadConmutada from './components/PropiedadConmutada.vue'
 
 //UN ARRAY CON LAS RUTAS DE NAVEGACION
 const myRoutes = [
@@ -15,7 +16,8 @@ const myRoutes = [
     { path: "/cine", component: CineComponent },
     { path: "/ciclovida", component: CicloVida },
     { path: "/directivas", component: DirectivasComponent },
-    { path: "/parimpar", component: ParImpar }
+    { path: "/parimpar", component: ParImpar },
+    { path: "/propiedadconmutada", component: PropiedadConmutada }
 ]
 
 //CREAMOS UNA VARIBALE PARA EL router INDICANDO EL TIPO DE NAVEGACION Y

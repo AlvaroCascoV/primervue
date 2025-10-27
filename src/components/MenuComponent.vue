@@ -23,6 +23,10 @@
 			</li>
 			<li>
 				<router-link to="/parimpar">ParImpar</router-link>
+				|
+			</li>
+			<li>
+				<router-link to="/propiedadconmutada">Conmutadas</router-link>
 			</li>
 		</ul>
 	</div>
